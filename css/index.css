@@ -2725,10 +2725,7 @@ blockquote footer cite:before {
 }
 @media screen and (max-width: 1024px) {
   #page-header.fixed.open-sidebar .site-page {
-    display: inline-block;
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
+    visibility: visible;
   }
 }
 #mobile-sidebar #menu_mask {
@@ -2957,7 +2954,7 @@ blockquote footer cite:before {
   -ms-filter: none;
   filter: none;
 }
-#sidebar {
+.open-mobile-menus #sidebar {
   left: -300px !important;
 }
 .open-mobile-toc #mobile-sidebar #mobile-sidebar-toc {
