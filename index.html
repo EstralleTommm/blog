@@ -74,24 +74,14 @@ function activateLightMode(){
   $('.full_page .nav_bg').css('background-attachment', 'fixed');
 }
 
-</script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script><script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script><script>fetch('https://api.ooopn.com/ciba/api.php',)
-.then(function (res){
-  return res.json();
-})
-.then(function (data) {
-  var sub = ''.length == 0  ? new Array() : ''.split(",");
-  var both = sub.unshift(data['ciba-en'],data.ciba)
-  var typed = new Typed(".subtitle", {
-  strings: sub,
-  startDelay: 300,
-  typeSpeed: 100,
-  loop: true,
-  backSpeed: 50
-  });
-})
-.catch(function (err) {
-  console.error(err);
-})</script><script>//首頁fullpage
+</script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var typed = new Typed(".subtitle", {
+strings: '夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。  ----诸葛亮《诫子书》'.split(","),
+startDelay: 300,
+typeSpeed: 100,
+loop: true,
+backSpeed: 50
+});
+</script><script>//首頁fullpage
 function alignContent() {
   for (var n = $(window).height(), e = document.querySelectorAll(".full_page"), i = 0; i < e.length; i++) 
     e[i].style.height = n + "px";
