@@ -1,12 +1,12 @@
 $(function () {
   
-  var is_Snackbar = GLOBAL_CONFIG.Snackbar !== undefined ? true : false
+  const is_Snackbar = GLOBAL_CONFIG.Snackbar !== undefined ? true : false
 
   /**
    * 當menu過多時，自動適配，避免UI錯亂
    */
-  var ph_width = $("#page-header").width()
-  var search_width = $('#search_button').outerWidth()
+  const ph_width = $("#page-header").width()
+  const search_width = $('#search_button').outerWidth()
   var mw = 0;
   for (var i = 0; i < $('#page-header .menus_item').length; i++) {
     mw = mw + $('#page-header .menus_item').eq(i).outerWidth()
@@ -342,7 +342,7 @@ $(function () {
       }
     }
 
-    var zoom = mediumZoom(document.querySelectorAll('#post img,.justified-gallery img'))
+    const zoom = mediumZoom(document.querySelectorAll('#post img,.justified-gallery img'))
     zoom.on('open', event => {
       let photoBg = $(document.documentElement).attr('data-theme') == 'dark' ? '#2d3032' : '#fff'
       zoom.update({ background: photoBg })
